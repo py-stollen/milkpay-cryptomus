@@ -1,22 +1,22 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class Network(StrEnum):
+class Network(str, Enum):
     """
     Source: https://doc.cryptomus.com/business/reference
     """
 
-    ARBITRUM = auto()
-    AVALANCHE = auto()
-    BCH = auto()
-    BSC = auto()
-    BTC = auto()
-    DASH = auto()
-    DOGE = auto()
-    ETH = auto()
-    LTC = auto()
-    POLYGON = auto()
-    SOL = auto()
-    TON = auto()
-    TRON = auto()
-    XMR = auto()
+    ARBITRUM = "arbitrum"
+    AVALANCHE = "avalanche"
+    BCH = "bch"
+    BSC = "bsc"
+    BTC = "btc"
+    DASH = "dash"
+    DOGE = "doge"
+    ETH = "eth"
+    LTC = "ltc"
+    POLYGON = "polygon"
+    SOL = "sol"
+    TON = "ton"
+    TRON = "tron"
+    XMR = "xmr"

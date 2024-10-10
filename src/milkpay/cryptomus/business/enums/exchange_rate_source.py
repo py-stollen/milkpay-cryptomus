@@ -1,7 +1,7 @@
-from enum import StrEnum
+from enum import Enum
 
 
-class ExchangeRateSource(StrEnum):
+class ExchangeRateSource(str, Enum):
     BINANCE = "Binance"
     BINANCE_P2P = "BinanceP2P"
     EXMO = "Exmo"

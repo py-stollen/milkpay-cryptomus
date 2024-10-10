@@ -1,7 +1,7 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class RecurringPaymentPeriod(StrEnum):
-    WEEKLY = auto()
-    MONTHLY = auto()
-    THREE_MONTH = auto()
+class RecurringPaymentPeriod(str, Enum):
+    WEEKLY = "weekly"
+    MONTHLY = "montly"
+    THREE_MONTH = "three_month"

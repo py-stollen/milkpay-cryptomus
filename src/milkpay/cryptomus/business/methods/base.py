@@ -1,9 +1,10 @@
-from typing import Optional, Self
+from typing import Optional
 
 from pydantic import Field, model_validator
 from stollen import StollenMethod
 from stollen.enums import HTTPMethod
 from stollen.types import StollenT
+from typing_extensions import Self
 
 from ..client import Cryptomus
 

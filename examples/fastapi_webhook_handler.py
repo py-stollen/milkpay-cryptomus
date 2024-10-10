@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import logging
-from typing import Any, Final, Annotated
+from typing import Annotated, Any, Final
 
 from fastapi import APIRouter, Body, HTTPException
 from starlette.requests import Request

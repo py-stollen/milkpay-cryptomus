@@ -1,6 +1,6 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class InvoiceType(StrEnum):
-    WALLET = auto()
-    UUID = auto()
+class InvoiceType(str, Enum):
+    WALLET = "wallet"
+    UUID = "uuid"

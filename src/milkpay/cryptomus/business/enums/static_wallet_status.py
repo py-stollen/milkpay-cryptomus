@@ -1,7 +1,7 @@
-from enum import StrEnum
+from enum import Enum
 
 
-class StaticWalletStatus(StrEnum):
+class StaticWalletStatus(str, Enum):
     BLOCKED = "blocked"
     ACTIVE = "active"
     INACTIVE = "in_active"

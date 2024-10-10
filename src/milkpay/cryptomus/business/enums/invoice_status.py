@@ -1,14 +1,14 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class InvoiceStatus(StrEnum):
-    CONFIRM_CHECK = auto()
-    PAID = auto()
-    PAID_OVER = auto()
-    FAIL = auto()
-    WRONG_AMOUNT = auto()
-    CANCEL = auto()
-    SYSTEM_FAIL = auto()
-    REFUND_PROCESS = auto()
-    REFUND_FAIL = auto()
-    REFUND_PAID = auto()
+class InvoiceStatus(str, Enum):
+    CONFIRM_CHECK = "confirm_check"
+    PAID = "paid"
+    PAID_OVER = "paid_over"
+    FAIL = "fail"
+    WRONG_AMOUNT = "wrong_amount"
+    CANCEL = "cancel"
+    SYSTEM_FAIL = "system_fail"
+    REFUND_PROCESS = "refund_process"
+    REFUND_FAIL = "refund_fail"
+    REFUND_PAID = "refund_paid"

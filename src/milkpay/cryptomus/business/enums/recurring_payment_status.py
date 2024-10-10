@@ -1,8 +1,8 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class RecurringPaymentStatus(StrEnum):
-    WAIT_ACCEPT = auto()
-    CANCEL_BY_MERCHANT = auto()
-    ACTIVE = auto()
-    CANCEL_BY_USER = auto()
+class RecurringPaymentStatus(str, Enum):
+    WAIT_ACCEPT = "wait_accept"
+    CANCEL_BY_MERCHANT = "cancel_by_merchant"
+    ACTIVE = "active"
+    CANCEL_BY_USER = "cancel_by_user"

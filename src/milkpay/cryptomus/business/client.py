@@ -16,7 +16,7 @@ from .exceptions import (
 from .headers import HeadersProvider
 
 if TYPE_CHECKING:
-    from .types import (  # type: ignore
+    from .types import (
         BalanceResponse,
         BlockingWallet,
         Currency,

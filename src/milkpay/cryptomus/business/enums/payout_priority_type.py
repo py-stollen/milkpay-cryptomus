@@ -1,8 +1,8 @@
-from enum import StrEnum, auto
+from enum import Enum
 
 
-class PayoutPriorityType(StrEnum):
-    RECOMMENDED = auto()
-    ECONOMY = auto()
-    HIGH = auto()
-    HIGHEST = auto()
+class PayoutPriorityType(str, Enum):
+    RECOMMENDED = "recommended"
+    ECONOMY = "economy"
+    HIGH = "high"
+    HIGHEST = "highest"

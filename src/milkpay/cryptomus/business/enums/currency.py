@@ -1,7 +1,7 @@
-from enum import StrEnum
+from enum import Enum
 
 
-class Currency(StrEnum):
+class Currency(str, Enum):
     """
     Source: https://doc.cryptomus.com/business/reference
     """
