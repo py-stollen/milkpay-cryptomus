@@ -34,3 +34,4 @@ class CreateInvoice(
     from_referral_code: Optional[str] = None
     discount_percent: Optional[int] = Field(default=None, ge=-99, le=100)
     is_refresh: Optional[bool] = None
+    additional_data: Optional[str] = Field(default=None, min_length=1, max_length=255)
