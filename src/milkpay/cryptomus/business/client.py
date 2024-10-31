@@ -137,6 +137,7 @@ class Cryptomus(Stollen):
         from_referral_code: Optional[str] = None,
         discount_percent: Optional[int] = None,
         is_refresh: Optional[bool] = None,
+        additional_data: Optional[str] = None,
     ) -> PaymentInfo:
         from .methods import CreateInvoice
 
@@ -159,6 +160,7 @@ class Cryptomus(Stollen):
             from_referral_code=from_referral_code,
             discount_percent=discount_percent,
             is_refresh=is_refresh,
+            additional_data=additional_data,
         )
 
         return await self(call)
