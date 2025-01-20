@@ -69,7 +69,7 @@ class Cryptomus(Stollen):
         from .types import PayoutUpdate
 
         api_key: str = self.resolve_api_key(payout=isinstance(update, PayoutUpdate))
-        encoded_body: bytes = body_text.replace(f',"sign":{update.sign}', "").encode()
+        encoded_body: bytes = body_text.replace(f',"sign":"{update.sign}"', "").encode()
         sign_base: str = b64encode(encoded_body).decode() + api_key
         signature: str = md5(sign_base.encode()).hexdigest()  # noqa: S324
 
