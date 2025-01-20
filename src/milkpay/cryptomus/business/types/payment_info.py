@@ -19,7 +19,7 @@ class PaymentInfo(CryptomusObject):
     merchant_amount: Optional[float] = None
     network: Optional[str] = None
     address: Optional[str] = None
-    from_address: Optional[str] = Field(alias="from")
+    from_address: Optional[str] = Field(default=None, alias="from")
     txid: Optional[str] = None
     payment_status: Optional[str] = None
     url: str
