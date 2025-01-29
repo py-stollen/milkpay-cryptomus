@@ -46,7 +46,7 @@ class HeadersProvider(BaseRequestFieldFactory):
         }
 
         api_key: str = client.resolve_api_key(payout=isinstance(method, PayoutMethod))
-        json_data: str = client.session.json_dumps(data) if data else ""
+        json_data: str = client.session.json_dumps(data)
         sign_base: str = b64encode(json_data.encode()).decode() + api_key
         signature: str = md5(sign_base.encode()).hexdigest()  # noqa: S324
 
