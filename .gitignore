@@ -17,6 +17,7 @@ site/
 .mypy_cache
 .pytest_cache
 .coverage
+uv.lock
 
 venv/
 .venv/
