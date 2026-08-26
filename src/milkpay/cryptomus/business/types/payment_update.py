@@ -21,8 +21,8 @@ class PaymentUpdate(CryptomusUpdate):
     wallet_address_uuid: Optional[str] = None
     network: Optional[str] = None
     currency: str
-    payer_currency: str
-    payer_amount: StrFloat
+    payer_currency: Optional[str] = None
+    payer_amount: Optional[StrFloat] = None
     payer_amount_exchange_rate: Optional[StrFloat] = None
     additional_data: Optional[str] = None
     convert: Optional[Convert] = None
